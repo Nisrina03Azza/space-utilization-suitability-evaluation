@@ -79,7 +79,7 @@ The model performs the following steps in sequence:
 
 > The `.model3` file is included in this repository — see `model/suitability_eval.model3`
 
-### 3. Conformity Classification Logic
+### 3. Suitability Classification Logic
 
 Each intersected feature was classified based on whether its space utilization matched the RDTR zone designation:
 
@@ -112,11 +112,12 @@ Each intersected feature was classified based on whether its space utilization m
 
 ### RDTR Zoning Designation
 ![RDTR Zoning Map](map/rdtr_zoning.png)
+> source: Yogyakarta Mayor’s Regulation Number 118 of 2021 page 105
 
 ### Suitability Evaluation Result
 ![Terban Village Suitability Evaluation Map](map/terban__suitability_eval.png)
 ![Cokrodiningratan Village Suitability Evaluation Map](map/cokro__suitability_eval.png)
-
+![The Differences for Each Space Utilization Activity in Terban and Cokrodiningratan Village](output/space_utilization_barchart.png)
 ---
 
 ## 📊 Results Summary
@@ -170,6 +171,7 @@ README.md
 - **RDTR Zoning Layer:** Yogyakarta City Land and Spatial Planning Agency
 - **Administrative Boundaries:** Yogyakarta City Geoportal
 - **Basemap:** Yogyakarta City Land and Spatial Planning Agency
+- **Regulation Cited:** Yogyakarta Mayor’s Regulation Number 118 of 2021
 
 ---
 
@@ -186,7 +188,7 @@ Geodesy & Geomatics Engineering — Universitas Gadjah Mada (2025)
 ## 📄 License
 
 Methodology and model file: MIT License.
-Map outputs derived from BIG/government sources carry their respective usage terms.
+Map outputs derived from government sources carry their respective usage terms.
 
 ---
 
