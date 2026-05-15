@@ -1,6 +1,6 @@
 # 🗺️ Space Utilization Suitability Evaluation — Yogyakarta City
 
-> Evaluating the suitability of existing space utilization in Terban and Cokrodiningratan Village against the Detailed Spatial Plan (RDTR) of Yogyakarta City using GIS-based spatial analysis.
+> Evaluating the suitability of existing space utilization per land parcel in Terban and Cokrodiningratan Village against the Detailed Spatial Plan (RDTR) of Yogyakarta City using GIS-based spatial analysis.
 
 ---
 
@@ -15,7 +15,7 @@ The analysis identifies areas of unsuitability based on the ITB(TB)X provision m
 ## 🎯 Research Objectives
 
 - Identify the distribution of existing space utilization activities across the study area
-- Evaluate spatial suitability between existing space utilization and RDTR zoning designations
+- Evaluate spatial suitability between existing space utilization per land parcel and RDTR zoning designations
 - Quantify the extent of suitable (permitted (I), limited permitted (T), conditionally permitted (B), limited and conditionally permitted (TB)) vs. unsuitable (not permitted (X)) land parcels
 - Produce thematic maps suitable for spatial governance recommendations
 
@@ -38,7 +38,6 @@ parcels.
 | Tool | Purpose |
 |------|---------|
 | QGIS 3.28 | Spatial overlay, Spatial join and attribute processing, Model Builder automation, map production |
-| ArcMap | Layers reprojections |
 | Microsoft Excel | Tabular summarisation and suitability calculations |
 
 ---
@@ -61,7 +60,7 @@ The model performs the following steps in sequence:
 ```
 [Input: Existing Space Utilization] ──┐
                                       ├──► Join Attributes by Layer
-[Input: RDTR Zoning Layer] ───────────┘        │
+[Input: RDTR Layer] ───────────┘        │
                                                │
                                                ▼
                                 Assign Suitability Classification
@@ -72,10 +71,10 @@ The model performs the following steps in sequence:
                               Calculate Geometry (Area in square meters)
                                                │
                                                ▼
-                            Symbolizing based on the RDTR standard
+                             Symbolizing based on the RDTR standard
                                                │
                                                ▼
-                     [Output: Suitability Evaluation Layer + Statistics]
+                             [Output: Suitability Evaluation Layer]
 ```
 
 > The `.model3` file is included in this repository — see `model/suitability_eval.model3`
@@ -90,7 +89,7 @@ Each intersected feature was classified based on whether its space utilization m
 | ⚠️ Limited Permitted (T) |  Limited permitted space utilization activities, refer to minimum building standards, operating restrictions, or regulations, other additions |
 | ⚠️ Conditionally Permitted (B) | Space utilization activities that are permitted conditionally or with a conditional use permit |
 | ⚠️ Limited and Conditionally Permitted (TB) | Space utilization activities that are permitted on a limited and conditional basis, certain |
-| ❌ Not-Permitted (X) | Space utilization activities that are not permitted, due to their nature and role If the plan is not in accordance with the plan that has been prepared, it can have a big impact to the surrounding environment |
+| ❌ Not-Permitted (X) | Space utilization activities that are not permitted, due to their nature and role. If the plan is not in accordance with the plan that has been prepared, it can have a big impact on the surrounding environment. |
 
 > ⚠️ **Roadways and Waterways are not included** in this repository, due to the differences in source data used by the Ministry of Agrarian Affairs and Spatial Planning/National Land Agency (ATR/BPN) of Yogyakarta City in its land parcel records and by the Yogyakarta City Land and Spatial Planning Agency in the 2021–2041 Yogyakarta City RDTR Map.
 
@@ -114,7 +113,7 @@ Each intersected feature was classified based on whether its space utilization m
 ### RDTR Zoning Designation
 ![RDTR Zoning Map](maps/rdtr_zoning.png)
 
-### Conformity Analysis Result
+### Suitability Evaluation Result
 ![Terban Village Suitability Evaluation Map](maps/terban__suitability_eval.png)
 ![Cokrodiningratan Village Suitability Evaluation Map](maps/cokro__suitability_eval.png)
 
