@@ -107,15 +107,15 @@ Each intersected feature was classified based on whether its space utilization m
 ## 🗺️ Maps
 
 ### Existing Land Use
-![Existing Land Use Map in Terban Village](maps/terban_space_utilization_existing.png)
-![Existing Land Use Map in Cokrodiningratan Village](maps/cokro_space_utilization_existing.png)
+![Existing Land Use Map in Terban Village](map/terban_space_utilization_existing.png)
+![Existing Land Use Map in Cokrodiningratan Village](map/cokro_space_utilization_existing.png)
 
 ### RDTR Zoning Designation
-![RDTR Zoning Map](maps/rdtr_zoning.png)
+![RDTR Zoning Map](map/rdtr_zoning.png)
 
 ### Suitability Evaluation Result
-![Terban Village Suitability Evaluation Map](maps/terban__suitability_eval.png)
-![Cokrodiningratan Village Suitability Evaluation Map](maps/cokro__suitability_eval.png)
+![Terban Village Suitability Evaluation Map](map/terban__suitability_eval.png)
+![Cokrodiningratan Village Suitability Evaluation Map](map/cokro__suitability_eval.png)
 
 ---
 
@@ -145,7 +145,7 @@ Each intersected feature was classified based on whether its space utilization m
 ## 📂 Repository Structure
 
 ```
-📁 maps/
+📁 map/
    ├── terban_space_utilization_existing.png
    ├── cokro_space_utilization_existing.png
    ├── rdtr_zoning.png
