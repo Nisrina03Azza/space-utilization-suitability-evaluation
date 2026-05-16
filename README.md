@@ -60,7 +60,7 @@ The model performs the following steps in sequence:
 ```
 [Input: Existing Space Utilization] ──┐
                                       ├──► Join Attributes by Layer
-[Input: RDTR Layer] ───────────┘        │
+[Input: RDTR Layer] ──────────────────┘        │
                                                │
                                                ▼
                                 Assign Suitability Classification
@@ -85,10 +85,10 @@ Each intersected feature was classified based on whether its space utilization m
 
 | Class | Definition |
 |---|---|
-| ✅ Permitted (I) | Permitted space utilization activities, refer to suitability and directions for area functions in the RDTR Map |
-| ⚠️ Limited Permitted (T) |  Limited permitted space utilization activities, refer to minimum building standards, operating restrictions, or regulations, other additions |
-| ⚠️ Conditionally Permitted (B) | Space utilization activities that are permitted conditionally or with a conditional use permit |
-| ⚠️ Limited and Conditionally Permitted (TB) | Space utilization activities that are permitted on a limited and conditional basis, certain |
+| ✅ Permitted (I) | Permitted space utilization activities, refer to suitability and directions for area functions in the RDTR Map. |
+| ⚠️ Limited Permitted (T) |  Limited permitted space utilization activities, refer to minimum building standards, operating restrictions, or regulations, and other additions. |
+| ⚠️ Conditionally Permitted (B) | Space utilization activities that are permitted conditionally or with a conditional use permit .|
+| ⚠️ Limited and Conditionally Permitted (TB) | Space utilization activities that are permitted on a limited and a certain conditional basis.|
 | ❌ Not-Permitted (X) | Space utilization activities that are not permitted, due to their nature and role. If the plan is not in accordance with the plan that has been prepared, it can have a big impact on the surrounding environment. |
 
 > ⚠️ **Roadways and Waterways are not included** in this repository, due to the differences in source data used by the Ministry of Agrarian Affairs and Spatial Planning/National Land Agency (ATR/BPN) of Yogyakarta City in its land parcel records and by the Yogyakarta City Land and Spatial Planning Agency in the 2021–2041 Yogyakarta City RDTR Map.
@@ -112,12 +112,14 @@ Each intersected feature was classified based on whether its space utilization m
 
 ### RDTR Zoning Designation
 ![RDTR Zoning Map](map/rdtr_zoning.png)
-> source: Yogyakarta Mayor’s Regulation Number 118 of 2021 page 105
+> source: Yogyakarta Mayor’s Regulation Number 118 of 2021, page 105
 
 ### Suitability Evaluation Result
 ![Terban Village Suitability Evaluation Map](map/terban__suitability_eval.png)
 ![Cokrodiningratan Village Suitability Evaluation Map](map/cokro__suitability_eval.png)
-![The Differences for Each Space Utilization Activity in Terban and Cokrodiningratan Village](output/space_utilization_barchart.png)
+![Suitability Evaluation Result for Each Space Utilization Activity in Terban Village](chart/terban_spaceutilizationactivity_eval_chart.png) 
+![Suitability Evaluation Result for Each Space Utilization Activity in Cokrodiningratan Village](chart/cokro_spaceutilizationactivity_eval_chart.png)
+> GOS = Green Open Space  |  Non-GOS = Non Green Open Space
 ---
 
 ## 📊 Results Summary
@@ -146,6 +148,10 @@ Each intersected feature was classified based on whether its space utilization m
 ## 📂 Repository Structure
 
 ```
+📁 chart/
+   ├── terban_spaceutilizationactivity_eval_chart.png
+   └── cokro_spaceutilizationactivity_eval_chart.png
+
 📁 map/
    ├── terban_space_utilization_existing.png
    ├── cokro_space_utilization_existing.png
