@@ -115,8 +115,8 @@ Each intersected feature was classified based on whether its space utilization m
 > source: Yogyakarta Mayor’s Regulation Number 118 of 2021, page 105
 
 ### Suitability Evaluation Result
-![Terban Village Suitability Evaluation Map](map/terban__suitability_eval.png)
-![Cokrodiningratan Village Suitability Evaluation Map](map/cokro__suitability_eval.png)
+![Terban Village Suitability Evaluation Map](map/terban_suitability_eval.png)
+![Cokrodiningratan Village Suitability Evaluation Map](map/cokro_suitability_eval.png)
 ![Suitability Evaluation Result for Each Space Utilization Activity in Terban Village](chart/terban_spaceutilizationactivity_eval_chart.png) 
 ![Suitability Evaluation Result for Each Space Utilization Activity in Cokrodiningratan Village](chart/cokro_spaceutilizationactivity_eval_chart.png)
 > GOS = Green Open Space  |  Non-GOS = Non Green Open Space
